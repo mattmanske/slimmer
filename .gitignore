@@ -12,3 +12,6 @@
 
 # Ignore NPM debug
 .npm-debug.log
+
+# Ignore Bower Folder
+/bower
