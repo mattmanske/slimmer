@@ -52,3 +52,9 @@ Static site starter template for [Middleman](http://middlemanapp.com).
   `#=require 'folder/file'` - *for js files*
   
   `@import 'folder/file'` - *for css files*
+
+## Deploying to GitHub Pages
+
+`$ rake publish`
+
+Thanks to [neo](https://github.com/neo/middleman-gh-pages) for the dpeloyment method. More information available there.
