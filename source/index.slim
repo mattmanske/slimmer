@@ -1,6 +1,11 @@
 ---
 title: Index
 ---
-h1 Welcome to Slimmer
+
+h1 = t(:welcome)
+// when you look into content/en.yml you will find the key "welcome" and the string "Welcome to Slimmer" as the value. Add more keys for bits of recurring information.
 
 = partial 'content/example'
+// see file content/_example.md
+
+p Note: of course you can also write content directly in the markup like this, but that is not so cool. Keeping code, content and assets separated means keeping sanity.
