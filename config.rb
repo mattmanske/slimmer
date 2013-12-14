@@ -9,7 +9,7 @@ activate :directory_indexes
 
 activate :i18n, :path => "/:locale/" # , :templates_dir => "pages"
 set :locales_dir, 'source/locales' # is broken. though the middleman configuration looks right, translations are raised as missing. found this workaround:
-I18n.load_path = Dir[Middleman::Application.root_path.join('source/_content', '**', '*.{yml}')]
+I18n.load_path = Dir[Middleman::Application.root_path.join('source/content', '**', '*.{yml}')]
 # https://github.com/middleman/middleman/issues/924#issuecomment-22691566
 
 set :js_dir, 'assets/javascripts'
