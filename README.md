@@ -35,7 +35,7 @@ Static site starter template for [Middleman](http://middlemanapp.com).
 
   ```
   $ cd ~/path/to/your/project
-  $ middleman init PROJECT_NAME -- template=slimmer
+  $ middleman init PROJECT_NAME --template=slimmer
   ```
 
 ## Using Bower
