@@ -6,9 +6,9 @@ require 'slim'
 activate :livereload
 activate :directory_indexes
 
-set :js_dir, 'javascripts'
-set :css_dir, 'stylesheets'
-set :images_dir, 'images'
+set :js_dir, 'assets/javascripts'
+set :css_dir, 'assets/stylesheets'
+set :images_dir, 'assets/images'
 
 # Add bower's directory to sprockets asset path
 after_configuration do
