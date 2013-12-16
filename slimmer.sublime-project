@@ -3,19 +3,22 @@
   [
     {
       "name": "CSS",
-      "path": "source/stylesheets"
+      "path": "source/assets/stylesheets"
     },
     {
       "name": "JS",
-      "path": "source/javascripts"
+      "path": "source/assets/javascripts"
+    },
+    {
+      "name": "Images",
+      "path": "source/assets/images"
     },
     {
       "name": "Source",
       "path": "source",
       "folder_exclude_patterns":
       [
-        "stylesheets",
-        "javascripts"
+        "assets"
       ]
     },
     {
