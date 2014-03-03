@@ -1,0 +1,9 @@
+h2 sidebar
+
+.logo
+  here is my awesome logo
+
+ul.navigation
+  - if data.sidebar.navbuttons
+    - data.sidebar.navbuttons.each do |button|
+      li.navbutton = active_link_to button.text , button.url

@@ -1,0 +1,11 @@
+navbuttons:
+  - text: about me
+    url: www.example.com
+  - text: logo and identify
+    url: www.example.com
+  - text: print and pub
+    url: www.example.com
+  - text: web and motion
+    url: www.example.com
+  - text: contact me
+    url: 'mailto:example@exmaple.example'

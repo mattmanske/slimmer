@@ -14,7 +14,9 @@ html
     == stylesheet_link_tag 'project'
 
   body class='#{page_classes}'
-
-    == yield
+    #sidebar
+      == partial 'partials/sidebar'
+    #main
+      == yield
 
     == javascript_include_tag 'project'    
