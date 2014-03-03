@@ -6,9 +6,9 @@ require 'slim'
 activate :livereload
 activate :directory_indexes
 
-set :js_dir, 'javascripts'
-set :css_dir, 'stylesheets'
-set :images_dir, 'images'
+set :js_dir, 'assets/javascripts'
+set :css_dir, 'assets/stylesheets'
+set :images_dir, 'assets/images'
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -18,22 +18,6 @@ after_configuration do
 
 end
 
-# Dynamic link helpers
-helpers do
-  def active_link_to(link, url, opts={})
-    compare = build? ? ('./' == url_for(url)) : (current_resource.url == url_for(url))
-    if compare
-      if opts[:class]
-        opts[:class] = opts[:class] + ' active'
-      else
-        opts = {}
-        opts[:class] = 'active'
-      end
-    end
-    link_to(link, url, opts)
-  end
-end
-
 # Build-specific configuration
 configure :build do
 
@@ -41,8 +25,7 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
 
-  activate :relative_assets
-  set :relative_links, true
+  # activate :relative_assets
+  # set :relative_links, true
 
 end
-
