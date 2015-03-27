@@ -27,6 +27,7 @@ Static site starter template for [Middleman](http://middlemanapp.com).
 2. Install slimmer template
 
   ```
+  $ mkdir ~/.middleman #if it doesn't exist yet
   $ cd ~/.middleman
   $ git clone git@github.com:polymatt/slimmer.git slimmer
   ```
