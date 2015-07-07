@@ -5,6 +5,7 @@ end
 require 'slim'
 activate :livereload
 activate :directory_indexes
+activate :react
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
@@ -15,6 +16,7 @@ after_configuration do
 
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
+  sprockets.append_path File.dirname(::React::Source.bundled_path_for('react.js'))
 
 end
 

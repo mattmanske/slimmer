@@ -66,6 +66,10 @@ GEM
       multi_json (~> 1.0)
       rack-livereload
     middleman-more (3.1.6)
+    middleman-react (0.13.3)
+      execjs
+      middleman-core (>= 3.0)
+      react-source (~> 0.13.3)
     middleman-sprockets (3.1.4)
       middleman-core (>= 3.0.14)
       middleman-more (>= 3.0.14)
@@ -84,6 +88,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
+    react-source (0.13.3)
     sass (3.4.13)
     slim (2.0.3)
       temple (~> 0.6.6)
@@ -112,5 +117,6 @@ DEPENDENCIES
   middleman (~> 3.1.6)
   middleman-gh-pages (~> 0.0.2)
   middleman-livereload (~> 3.1.0)
+  middleman-react
   sass (~> 3.4.3)
   slim (~> 2.0.3)
